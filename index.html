@@ -15,7 +15,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
     </head>
     <body>
-        <header>
+        <header id="headerSection">
             <nav class="container navbar navbar-inverse">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -28,8 +28,8 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav text-uppercase" id="nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#headerSection">Home</a></li>
+                        <li><a href="#servicesSection">Services</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -39,10 +39,38 @@
             <div class="hero text-center" id="hero">
                 <h1>Welcome To Our Studio!</h1>
                 <p class="text-uppercase">It's nice to meet you</p>
-                <a href="#"><button class="text-uppercase">Tell me more</button></a>
+                <a href="#servicesSection"><button class="text-uppercase">Tell me more</button></a>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section class="services container text-center" id="servicesSection">
+                <h1 class="text-uppercase">Services</h1>
+                <p>Proin iaculis purus consequat sem cure.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        <h1>E-commerce</h1>
+                        <p>Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <h1>Responsive Web</h1>
+                        <p>Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <h1>Web Security</h1>
+                        <p>Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>
