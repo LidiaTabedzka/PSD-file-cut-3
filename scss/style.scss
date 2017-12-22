@@ -93,13 +93,15 @@ header {
 }
 /*Styles for section: services*/
 .services h1,
-.portfolio h1 {
+.portfolio h1,
+.about h1 {
     font-size: 40px;
     font-weight: 700;
     color: #222222;
 }
 .services p,
-.portfolio p {
+.portfolio p,
+.about p {
     font-family: sloganFont;
     font-size: 16px;
     color: #777777;
@@ -160,7 +162,7 @@ header {
                 margin: 0;
                 width: 291px;
             }
-            .imageBox {
+            .image-box {
                 width: 291px;
                 height: 301px;
                 position: relative;
@@ -191,6 +193,65 @@ header {
         }
     }
 }
+/*Styles for section: about*/
+.about {
+    .row {
+        &:nth-of-type(1) {
+            margin-top: 50px;
+        }
+        &:last-of-type .layer{
+            top: -6px;
+        }
+        h1 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+        p {
+            font-size: 14px;
+            font-family: 'Roboto Slab', serif;
+        }
+    }
+    .image-box {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    .layer {
+        background-color: #f1f1f1;
+        width: 174px;
+        height: 174px;
+        top: -2px;
+        border-radius: 50%;
+        z-index: 1;
+        position: absolute;
+    }
+    img {
+        z-index: 100;
+    }
+    .line-box {
+        display: flex;
+        justify-content: center;
+    }
+    .line {
+        background-color: #f1f1f1;
+        width: 3px;
+        height: 95px;
+    }
+    .gold-circle {
+        height: 160px;
+        width: 160px;
+        z-index: 1;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fed136;
+        h1 {
+            color: white;
+            text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.7);
+        }
+    }
+}
 
 /*Media queries*/
 @media (max-width: 767px) {
@@ -211,6 +272,27 @@ header {
         }
         p {
             font-size: 45px;
+        }
+    } 
+}
+@media (max-width: 991px) {
+    /*Styles for section: about*/
+    .about {
+        .col-md-4 {
+            text-align: center;
+            .text-uppercase {
+                margin-top: 20px; 
+            }
+        }
+        .row {
+            &:nth-of-type(1),
+            &:nth-of-type(5) {
+                display: flex;
+                flex-direction: column;
+                .col-md-4:nth-of-type(1) {
+                    order: 2;
+                }
+            }
         }
     }
 }
