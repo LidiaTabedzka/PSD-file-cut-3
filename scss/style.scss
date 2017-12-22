@@ -94,14 +94,16 @@ header {
 /*Styles for section: services*/
 .services h1,
 .portfolio h1,
-.about h1 {
+.about h1,
+.team h1 {
     font-size: 40px;
     font-weight: 700;
     color: #222222;
 }
 .services p,
 .portfolio p,
-.about p {
+.about p,
+.team p {
     font-family: sloganFont;
     font-size: 16px;
     color: #777777;
@@ -252,6 +254,38 @@ header {
         }
     }
 }
+/*Styles for section: team*/
+.team {
+    background-color: #f7f7f7;
+    .text-padding {
+        padding: 0 200px;
+    }
+    .row {
+        margin-top: 100px;
+        h1 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+            font-family: 'Roboto Slab', serif;
+        }
+    }
+    img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .fa {
+        font-size: 20px;
+        border: 3px solid #222222;
+        padding: 10px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-bottom: 50px;
+    }
+}
 
 /*Media queries*/
 @media (max-width: 767px) {
@@ -294,5 +328,9 @@ header {
                 }
             }
         }
+    }
+    /*Styles for section: team*/
+    .team .text-padding {
+        padding: 0;
     }
 }
