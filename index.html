@@ -32,12 +32,12 @@
                         <li><a href="#servicesSection">Services</a></li>
                         <li><a href="#portfolioSection">Portfolio</a></li>
                         <li><a href="#aboutSection">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contactSection">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero text-center" id="hero">
-                <h1>Welcome To Our Studio!</h1>
+                <h2>Welcome To Our Studio!</h2>
                 <p class="text-uppercase">It's nice to meet you</p>
                 <a href="#servicesSection"><button class="text-uppercase">Tell me more</button></a>
             </div>
@@ -143,8 +143,7 @@
                         <h1>Our Humble Beginnings</h1>
                         <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
                     </div>
-                    <div class="col-md-4 image-box">
-                        <div class="layer"></div>
+                    <div class="col-md-4">
                         <img src="./images/image6.png" alt=""/>
                     </div>
                     <div class="col-md-4"></div>
@@ -154,8 +153,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4"></div>
-                    <div class="col-md-4 image-box">
-                        <div class="layer"></div>
+                    <div class="col-md-4">
                         <img src="./images/image7.png" alt=""/>
                     </div>
                     <div class="col-md-4 text-left">
@@ -173,8 +171,7 @@
                         <h1>Enter The Dark Days</h1>
                         <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.</p>
                     </div>
-                    <div class="col-md-4 image-box">
-                        <div class="layer"></div>
+                    <div class="col-md-4">
                         <img src="./images/image8.png" alt=""/>
                     </div>
                     <div class="col-md-4"></div>
@@ -184,8 +181,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4"></div>
-                    <div class="col-md-4 image-box">
-                        <div class="layer"></div>
+                    <div class="col-md-4">
                         <img src="./images/image9.png" alt=""/>
                     </div>
                     <div class="col-md-4 text-left">
@@ -198,8 +194,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 image-box">
-                        <div class="layer"></div>
+                    <div class="col-md-12">
                         <div class="text-uppercase gold-circle">
                             <h1>Our</h1>
                             <h1>Story</h1>
@@ -241,7 +236,60 @@
                     <p class="text-padding">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
                 </div>
             </section>
+            <section class="software container text-center">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/envato.png" alt=""/>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/wordpress.png" alt=""/>   
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/tuts.png" alt=""/>  
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/microlancer.png" alt=""/>  
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid contact" id="contactSection">
+                <img src="images/map-image.png" alt=""/> 
+                <div class="container text-center">
+                    <h1 class="text-uppercase">Contact us</h1>
+                    <p>Proin iaculis purus consequat sem cure.</p>
+                    <div class="row">
+                        <div class="col-md-6 text-right">
+                            <input type="text" placeholder="YOUR NAME *">
+                            <input type="email" placeholder="YOUR E-MAIL *">
+                            <input type="text" placeholder="SUBJECT">
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <textarea placeholder="YOUR MESSAGE *"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button>Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer class="container">
+            <p>© Copyright 2014 FreebiesXpress.com</p>
+            <div>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $('#nav').localScroll({duration:800});
+               $('#hero').localScroll({duration:800});
+            });
+        </script>
     </body>
 </html>
