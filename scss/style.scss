@@ -45,7 +45,6 @@ header {
         background-size: cover;
         position: absolute;
         display: block;
-        width: 100vw;
         height: 100vh;
         background-image: url('../images/background-image.png'); 
         left: 0;
@@ -93,17 +92,19 @@ header {
     }
 }
 /*Styles for section: services*/
+.services h1,
+.portfolio h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #222222;
+}
+.services p,
+.portfolio p {
+    font-family: sloganFont;
+    font-size: 16px;
+    color: #777777;
+}
 .services {
-    h1 {
-        font-size: 40px;
-        font-weight: 700;
-        color: #222222;
-    }
-    p {
-        font-family: sloganFont;
-        font-size: 16px;
-        color: #777777;
-    }
     .row {
         margin-top: 100px;
         .col-md-4 {
@@ -131,6 +132,62 @@ header {
         p {
             font-size: 14px;
             font-family: 'Roboto Slab', serif;
+        }
+    }
+}
+/*Styles for section: portfolio*/
+.portfolio {
+    background-color: #f7f7f7;
+    .row {
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+            img {
+                width: 291px;
+            }
+            h1 {
+                font-size: 18px;
+                padding-top: 20px;
+            }
+            p {
+                font-size: 14px;
+                padding-bottom: 20px;
+            }
+            h1, p {
+                background-color: white;
+                margin: 0;
+                width: 291px;
+            }
+            .imageBox {
+                width: 291px;
+                height: 301px;
+                position: relative;
+            }
+            .layer {
+                position: absolute;	
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 1s;
+                h4 {
+                    visibility: hidden;
+                    color: #CCA45D;
+                    border: 2px solid #CCA45D;
+                    padding: 5px;
+                }
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                    h4 {
+                        visibility: visible;
+                    }
+                }
+            }
         }
     }
 }
