@@ -191,7 +191,6 @@ header {
                     color: #CCA45D;
                     border: 2px solid #CCA45D;
                     padding: 5px;
-                    transition: 1s;
                 }
                 &:hover {
                     background-color: rgba(0, 0, 0, 0.8);
@@ -208,9 +207,6 @@ header {
     .row {
         &:nth-of-type(1) {
             margin-top: 50px;
-        }
-        &:last-of-type .layer{
-            top: -6px;
         }
         h1 {
             margin-top: 0;
@@ -308,9 +304,12 @@ footer .fa {
     }
     h1 {
         color: white;
+        margin-top: 100px;
     }
     .row {
+       &:first-of-type {
         margin-top: 100px;
+       } 
     }
     input,
     textarea {
@@ -409,12 +408,19 @@ footer {
     /*Styles for section: contact*/
     .contact {
         height: auto;
-        .row {
+        h1 {
             margin-top: 50px;
+        }
+        .row {
+            &:first-of-type {
+                margin-top: 50px;
+            }
         }
         .col-md-6 {
             text-align: center;
-            margin-bottom: 50px;
+            &:first-of-type {
+                margin-bottom: 50px;
+            }
         }
     }
 }
