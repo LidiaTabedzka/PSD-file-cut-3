@@ -159,8 +159,7 @@ header {
           visibility: hidden;
           color: #CCA45D;
           border: 2px solid #CCA45D;
-          padding: 5px;
-          transition: 1s; }
+          padding: 5px; }
         .portfolio .row .col-md-4 .layer:hover {
           background-color: rgba(0, 0, 0, 0.8); }
           .portfolio .row .col-md-4 .layer:hover h4 {
@@ -169,9 +168,6 @@ header {
 /*Styles for section: about*/
 .about .row:nth-of-type(1) {
   margin-top: 50px; }
-
-.about .row:last-of-type .layer {
-  top: -6px; }
 
 .about .row h1 {
   margin-top: 0; }
@@ -258,8 +254,9 @@ footer .fa {
     max-width: 614px;
     max-height: 646px; }
   .contact h1 {
-    color: white; }
-  .contact .row {
+    color: white;
+    margin-top: 100px; }
+  .contact .row:first-of-type {
     margin-top: 100px; }
   .contact input,
   .contact textarea {
@@ -346,11 +343,14 @@ footer {
   /*Styles for section: contact*/
   .contact {
     height: auto; }
-    .contact .row {
+    .contact h1 {
+      margin-top: 50px; }
+    .contact .row:first-of-type {
       margin-top: 50px; }
     .contact .col-md-6 {
-      text-align: center;
-      margin-bottom: 50px; } }
+      text-align: center; }
+      .contact .col-md-6:first-of-type {
+        margin-bottom: 50px; } }
 
 @media (max-width: 500px) {
   /*Styles for section: header*/
